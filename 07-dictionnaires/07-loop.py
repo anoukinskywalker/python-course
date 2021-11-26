@@ -26,6 +26,12 @@ notes: Notes = {
 
 ################################################################################
 best_course: str = ''
+best_note=0
+for course in notes.keys():
+    if (notes[course]>=best_note) :  
+        best_note=notes[course]
+        best_course = course
+
 ################################################################################
 
 

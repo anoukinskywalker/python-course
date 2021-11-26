@@ -10,7 +10,23 @@
 # Créez un dictionnaire utilisant ce type.
 
 ################################################################################
+from typing import TypedDict
 
+class Meal(TypedDict, total=False) :
+    firstcourse : str
+    maincourse : str
+    desert : str
+
+meal1: Meal = {
+    "firstcourse": "Led Zeppelin",
+    "maincourse": "Physical Grafitti",
+    "desert": "yum"
+}
+
+meal2: Meal = {
+    "firstcourse": "Led Zeppelin",
+    "maincourse": "Physical Grafitti"
+}
 ################################################################################
 
 # Pas de validation automatique pour cet exercice. À nouveau, vérifiez que votre

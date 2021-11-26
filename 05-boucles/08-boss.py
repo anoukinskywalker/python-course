@@ -1,3 +1,5 @@
+import math
+
 # En mathématiques, la suite de Fibonacci est une suite d'entiers dans laquelle
 # chaque terme est la somme des deux termes qui le précèdent (Wikipédia).
 
@@ -10,7 +12,16 @@
 # suite de Fibonacci (ou 0 si aucun ne correspond).
 
 ################################################################################
-
+def find_in_fibonacci_suite(tab) :
+    noFib=0
+    for t in tab :
+        f1=5*pow(t,2)+4
+        f2=5*pow(t,2)-4
+        if (math.sqrt(f1).is_integer() or math.sqrt(f2).is_integer() ):
+            return t
+        else :
+            noFib=0
+    return noFib           
 ################################################################################
 
 

@@ -16,9 +16,41 @@
 from typing import TypedDict
 
 ################################################################################
+class Country(TypedDict):
+    name : str
+    is_eu_member : bool
+
 class Town(TypedDict):
     name: str
     is_capital: bool
+    country : Country
+
+paris : Town = {
+    "name" : "Paris",
+    "is_capital" : True,
+    "country" :  {
+        "name" : "France",
+        "is_eu_member" : True
+    }
+}
+
+bordeaux : Town = {
+    "name" : "Bordeaux",
+    "is_capital" : False,
+    "country" :  {
+        "name" : "France",
+        "is_eu_member" : True
+    }
+}
+
+casablanca : Town = {
+    "name" : "Casablanca",
+    "is_capital" : False,
+    "country" :  {
+        "name" : "Maroc",
+        "is_eu_member" : False
+    }
+}
 ################################################################################
 
 # Attention ! L'inclusion et l'héritage sont très différents.

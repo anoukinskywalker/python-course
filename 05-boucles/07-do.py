@@ -17,7 +17,14 @@
 # Stockez le premier nombre dépassant 10000 dans une variable "result"
 
 ################################################################################
-
+result = 0
+i=1
+result=1
+while True :
+    result=result*i
+    i=i+1
+    if result > 10000:
+        break
 ################################################################################
 
 

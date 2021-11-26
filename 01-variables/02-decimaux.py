@@ -12,7 +12,7 @@
 pizza_slices: int = 8
 persons: int = 3
 ################################################################################
-
+slices_per_person: float = 8/3
 print("Résultat: ", slices_per_person)
 
 # Les commentaires après l'exercice me permettent de préciser certaines

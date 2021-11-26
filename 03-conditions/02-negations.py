@@ -7,6 +7,8 @@
 age: int = 17
 is_sober: bool = True
 is_minor: bool = age < 18
+
+can_drink: bool = (is_sober == True and is_minor == False)
 ################################################################################
 
 print(can_drink)

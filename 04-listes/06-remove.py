@@ -12,6 +12,8 @@
 voyels: list[str] = ['A', 'E', 'X', 'I', 'O', 'X', 'U', 'Y']
 ################################################################################
 
+voyels.remove('X')
+voyels.pop(4)
 # Non, il n'existe pas de méthode removeAll() en python... (mais d'autres 
 # astuces sont envisageables)
 

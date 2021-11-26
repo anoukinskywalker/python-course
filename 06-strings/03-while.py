@@ -8,5 +8,9 @@
 # Pas de correction automatique pour cet exercice.
 
 ################################################################################
-
+while True :
+    print("Quel est votre age?")
+    age=input()
+    if (int(age) < 130) :
+        break
 ################################################################################

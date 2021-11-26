@@ -21,6 +21,19 @@ album: Album = {
 
 ################################################################################
 
+class Book(TypedDict):
+    auteur: str  
+    titre: str
+    year: int
+    read : bool
+
+book: Book = {
+    "auteur": "Led Zeppelin",
+    "titre": "Physical Grafitti",
+    "year": 1975,
+    "read" : True
+}
+
 ################################################################################
 
 # Pas de validation automatique pour cet exercice.

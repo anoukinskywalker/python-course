@@ -10,6 +10,10 @@
 ################################################################################
 notes: list[int] = [10, 15, 12, 8, 7]
 ################################################################################
+total=0
+for i in notes :
+    total=total+i
+average=total/len(notes)
 
 # Note : si vous connaissez déjà python, vous savez peut-être qu'il existe des
 # méthodes plus simples pour calculer une moyenne... Mais chaque chose en son

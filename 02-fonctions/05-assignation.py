@@ -13,6 +13,13 @@
 def multiple(a: float, b: float) -> float:
     return a * b
 
+def get_square(a: float) -> float :
+    return a*a
+
+square: float = get_square(8)
+
+double_square: float = get_square(square)
+
 result: float = multiple(6, 8)
 ################################################################################
 

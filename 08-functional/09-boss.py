@@ -8,7 +8,7 @@
 # ÉTAPE 2
 # Un client commande vos deux articles en promotion.
 # Créez un dictionnaire "order" de type Order (type à créer) contenant les clés
-# total_cost et total_discount_cost qui sont deux float.
+# total_cost et total_discount_cost qui sont deux entiers.
 # Calculez dans ce dictionnaire le total des articles, avec le prix original
 # et le prix discount.
 
@@ -16,8 +16,8 @@ from typing import TypedDict
 
 class Product(TypedDict, total=False):
     name: str
-    cost: float
-    discount: float
+    cost: int
+    discount: int
     discount_cost: float
 
 products: list[Product] = [

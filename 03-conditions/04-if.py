@@ -17,6 +17,11 @@ first_visit: bool = True
 if first_visit:
     print('Welcome !')
 ################################################################################
+def get_rectangle_surface(longueur: int, largeur : int) :
+    surface=longueur*largeur
+    if(longueur==largeur) :
+        print("c'est un carré!")
+    return surface
 
 print(get_rectangle_surface(4, 6))
 

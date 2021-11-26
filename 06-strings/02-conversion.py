@@ -14,7 +14,15 @@
 # Pas de validation automatique pour cet exercice.
 
 ################################################################################
-
+print("Quel est votre age?")
+age=input()
+if(age.isnumeric==False or age.isdigit):
+    print("ERROR")
+else :
+    if(int(age) >=18 ) :
+        print("Vous êtes majeur.")
+    else :
+        print("Vous êtes mineur.")
 ################################################################################
 
 # Astuce : vous pouvez utiliser un ternaire pour afficher "Mineur" ou "Majeur"

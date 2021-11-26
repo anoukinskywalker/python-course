@@ -10,6 +10,9 @@
 months: list[str] = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 ################################################################################
 
+message="Mars est le " + str(months.index("Mar")+1) + "e mois de l'année"
+print(message)
+
 
 
 

@@ -19,7 +19,8 @@ interstellar = {
 }
 
 ################################################################################
-
+interstellar['director']=inception['director']
+interstellar['composer']=inception['composer']
 ################################################################################
 
 

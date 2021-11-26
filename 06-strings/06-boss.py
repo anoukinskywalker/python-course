@@ -11,7 +11,23 @@
 # La fonction doit renvoyer un booléen.
 
 ################################################################################
-
+def is_valid_password(password) :
+    nchiffre=0
+    nMaj=0
+    nMin=0
+    pcharacters=list(password)
+    for char in pcharacters :
+        if char.isnumeric() :
+            nchiffre=nchiffre+1
+        elif char.isupper() :
+            nMaj=nMaj+1
+        elif char.islower() :
+            nMin=nMin+1
+        else :
+            return False
+    print(nchiffre>=2 and nMaj>=1 and len(password) >=6)
+    return (nchiffre>=2 and nMaj>=1 and len(password) >=6 and nMin >=1)
+        
 ################################################################################
 
 # Pour simplifier vos test, utilisez input() et "while True" afin de pouvoir

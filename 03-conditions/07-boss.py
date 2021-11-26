@@ -9,10 +9,15 @@
 # 13 % 4 = 1 (il y a un reste : 13 n'est pas divisible par 4)
 
 ################################################################################
-
+def is_leap_year(year : int) :
+    return ((year%4 == 0 and year%100!=0) or (year%100==0 and year%400==0))
 ################################################################################
 
-print(is_leap_year(2021))
+print(is_leap_year(2000))
+print(is_leap_year(1900))
+print(is_leap_year(1998))
+print(is_leap_year(2004))
+
 
 
 

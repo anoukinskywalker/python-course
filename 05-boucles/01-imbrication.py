@@ -30,6 +30,14 @@ notes = [
     [15, 18, 4, 14],
     [9, 9, 12, 15]
 ]
+
+averages=[]
+
+for notes_student in notes :
+    total=0
+    for note in notes_student :
+        total=total+note
+    averages.append(total/len(notes_student))
 ################################################################################
 
 

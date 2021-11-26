@@ -20,7 +20,17 @@
 # "Rattrapage" en dessous de 10
 
 ################################################################################
-
+def get_mention(note : int):
+    if (note>=16):
+        return "Très bien"
+    elif (note>=14) :
+        return "Bien"
+    elif (note>=12) :
+        return "Assez bien"
+    elif (note >=10) :
+        return "Passable"
+    else :
+        return "Rattrapage"
 ################################################################################
 
 print(get_mention(17))

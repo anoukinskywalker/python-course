@@ -14,7 +14,15 @@
 # Stocker le resultat dans un tableau "powers".
 
 ################################################################################
-
+powers=[]
+p=0
+i=1
+while (p<10000) :
+    p=pow(2,i)
+    powers.append(p)
+    i=i+1
+powers.pop(-1)
+print(powers)
 ################################################################################
 
 # Astuce : la fonction pow() vous permet de calculer des puissances

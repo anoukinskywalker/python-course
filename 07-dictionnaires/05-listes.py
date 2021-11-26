@@ -14,6 +14,29 @@ class Student(TypedDict):
 
 ################################################################################
 
+student1 : Student = {
+    "firstname" : "yo",
+    "lastname" : "yo",
+    "notes" : [1,2,3]
+}
+
+student2 : Student = {
+    "firstname" : "yo",
+    "lastname" : "yo",
+    "notes" : [1,2,3]
+}
+
+student3 : Student = {
+    "firstname" : "yo",
+    "lastname" : "yo",
+    "notes" : [1,2,3]
+}
+
+students = []
+students.append(student1)
+students.append(student2)
+students.append(student3)
+
 ################################################################################
 
 

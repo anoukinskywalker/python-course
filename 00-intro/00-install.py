@@ -8,7 +8,7 @@
 # Installons ensuite python.
 # Pour ce faire, rendez-vous sur https://www.python.org/downloads/.
 # Sélectionnez votre système d'exploitation et suivez les instructions.
-# Sur Windows, sélectionnez Windows installer (64-bit)
+# Sur Windows, sélectionnez Windows embeddable package (64-bit)
 # Sur MacOS, sélectionnez macOS 64-bit universal2 installer
 
 # Sur Windows: cochez la case "Add python to PATH"
@@ -18,12 +18,7 @@
 
 # Enfin, ouvrez un terminal, par exemple celui intégré à VSCode :
 # Terminal -> Nouveau terminal
-
-# Lancez le programme avec une des commandes suivantes (cela varie selon votre
-# système):
-# py 00-intro/00-install.py
-# python3 00-intro/00-install.py
-# python 00-intro/00-install.py
+# Lancez le programme avec la commande: python 00-intro/00-install.py
 
 # Si vous voyez le message "Hello World", félicitations, c'est tout bon !
 

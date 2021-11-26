@@ -8,7 +8,9 @@
 # Pas de validation automatique pour cet exercice.
 
 ################################################################################
-
+print("Quel est votre nom?")
+name=input()
+print("Bonjour "+name)
 ################################################################################
 
 # Astuce : si vous voulez permettre à la personne de répondre sur une nouvelle

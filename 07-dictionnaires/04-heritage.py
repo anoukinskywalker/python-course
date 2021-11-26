@@ -25,6 +25,23 @@ class Car(Vehicle):
     kilometers: int
 
 ################################################################################
+class Train(Vehicle):
+    wagons_count: int
+    has_bar_wagon: bool
+
+my_car : Car = {
+    "seats" : 5,
+    "cost" : 10000,
+    "doors_count" : 4,
+    "kilometers" : 100000
+}
+
+my_train : Train = {
+    "seats" : 500,
+    "cost" : 10000000,
+    "wagons_count" : 20,
+    "has_bar_wagon" : True,
+}
 ################################################################################
 
 # Pas de validation automatique pour cet exercice. Encore une fois, vérifiez

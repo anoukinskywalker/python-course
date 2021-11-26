@@ -5,6 +5,11 @@
 # "HH:mm" et qui retourne True si le format est valide et si l'heure existe.
 
 ################################################################################
+def is_valid_time(time) :
+    t=time.split(":")
+    if (len(time)==5):
+        if (t[0].isnumeric() and t[1].isnumeric()) :
+            return ((int(t[0]) >= 0 and int(t[0]) < 24) and (int(t[1])>=0 and int(t[1]) <60))
 
 ################################################################################
 

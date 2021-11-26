@@ -15,6 +15,9 @@
 
 ################################################################################
 ingredients: str = "tomato, cheese, lettuce, pickles"
+tab=ingredients.split(", ")
+tab.remove('cheese')
+ingredients=' ~ '.join(tab)
 ################################################################################
 
 

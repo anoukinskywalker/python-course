@@ -12,7 +12,11 @@ def is_centenary(age: int) -> bool:
     return age >= 100
 ################################################################################
 
+def can_drink(country : str, age: int):
+    can_d = ((age >=18 and country == "France") or (age >=21 and country == "USA"))
+    return can_d
 
+print(can_drink("USA", 18))
 
 
 
