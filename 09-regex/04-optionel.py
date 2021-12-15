@@ -20,7 +20,13 @@ if (match):
 
 ################################################################################
 def is_valid_version(version: str) -> bool:
-    return True
+    match = re.search(r'^\d\.\d$(!)?', version)
+    match2 = re.search(r'^\d\.\d\.\d$(!)?', version)
+    if (match or match2):
+        print(version)
+        return True
+    else :
+        return False
 ################################################################################
 
 

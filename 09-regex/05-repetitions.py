@@ -25,7 +25,12 @@ if (match):
 
 ################################################################################
 def is_valid_command(number: str) -> bool:
-    return True
+    match = re.search(r'^#A*\d+$', number)
+    if (match):
+        print(number)
+        return True
+    else :
+        return False
 ################################################################################
 
 

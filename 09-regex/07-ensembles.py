@@ -21,7 +21,12 @@ if (match):
 
 ################################################################################
 def is_valid_color(color: str) -> bool:
-    return True
+    match = re.search(r'^#[a-fA-F0-9]{6}$', color)
+    if (match):
+        print(color)
+        return True
+    else :
+        return False
 ################################################################################
 
 

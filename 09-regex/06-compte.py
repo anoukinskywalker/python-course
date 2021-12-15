@@ -18,7 +18,12 @@ if (match):
 
 ################################################################################
 def is_valid_version(version: str) -> bool:
-    return True
+    match = re.search(r'^(\d\.){0,2}\d$', version)
+    if (match):
+        print(version)
+        return True
+    else :
+        return False
 ################################################################################
 
 
