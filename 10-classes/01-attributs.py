@@ -30,7 +30,18 @@ my_instance = MyClass("a", 1)
 # ans.
 
 ################################################################################
-
+class User :
+    def __init__(self, fn, ln, age):
+        self.firstname = fn
+        self.lastname = ln
+        self.age = age
+        if (age >= 18 ) :
+            self.adult = True
+        else :
+            self.adult = False
+        self.followers = 0
+        
+bob = User("Bob", "Doe", 18)
 ################################################################################
 
 # Notez que le typage de letter et number est directement déduit du type des

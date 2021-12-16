@@ -29,6 +29,11 @@ other_instance = MyClass()
 # qui sera une instance de User.
 
 ################################################################################
+class User :
+    def __init__(self):
+        print("Hello world")
+        
+alice = User()
 
 ################################################################################
 

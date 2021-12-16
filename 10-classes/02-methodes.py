@@ -26,6 +26,24 @@ print(my_instance.get_letter())
 # méthode is_adult() qui renvoit True ou False en fonction de l'âge
 
 ################################################################################
+class User :
+    def __init__(self, fn, ln, age):
+        self.firstname = fn
+        self.lastname = ln
+        self.age = age
+        self.followers = 0
+    
+    def is_adult(self) :
+        if (self.age >= 18 ) :
+            return True
+        else :
+            return False
+    
+    def get_full_name(self) :
+        return self.firstname + " " + self.lastname
+        
+bob = User("Bob", "Doe", 18)
+
 
 ################################################################################
 
