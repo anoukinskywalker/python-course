@@ -27,6 +27,13 @@ def get_color_type(color: Tuple[int, int, int] | Tuple[int, int, int, int] | str
 
 ################################################################################
 def get_date_type(date: Tuple[int, int, int] | Tuple[int, int] | str) -> str:
+    match date:
+        case [a, b, c]:
+            return "YYYYMMdd"
+        case [a, b]:
+            return "MMdd"
+        case _:
+            return "YYYY-MM-dd"
 ################################################################################
 
 

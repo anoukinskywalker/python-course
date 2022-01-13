@@ -54,7 +54,7 @@ class User :
 
     def add_followers(self, n):
         if (self._is_adult()) :
-            self.followers = self.followers +n
+            self._followers = self._followers +n
 
 def get_oldest(user1, user2) :
     if (user1.get_age() > user2.get_age()) :
@@ -79,6 +79,10 @@ class Student(User):
             return True
         else :
             return False
+    
+    def add_followers(self, n):
+        if (self._is_adult() and self.has_degree()) :
+            self._followers = self._followers +n
 ################################################################################
 
 
